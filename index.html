@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cloudfun-logo</title>
+  <link rel="stylesheet" href="./colpick.css">
+  <style>
+    *{margin: 0;padding: 0}
+    body{display: flex;align-items: center;justify-content: center;}
+    .logo-box{display: flex;justify-content: center;}
+    .picker{display: flex;width: 800px;justify-content: space-around;}
+    .picker .txt{color: #666;margin-bottom: 10px;}
+    .download{
+      margin: 100px auto;
+      width: 200px;
+      height: 40px;
+      background: #1890ff;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    .logo{width: 340px;height: 340px;display: flex;align-items: center;justify-content: center;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="logo-box">
+      <div class="logo" id="logo">
+        <svg t="1636038506996" class="icon" viewBox="0 0 1472 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="804" width="300" height="300">
+          <path id="leftCircle" d="M17.856 512a512.746667 512 0 1 0 1025.493333 0 512.746667 512 0 1 0-1025.493333 0Z" fill="#7D92EE" p-id="805"></path>
+          <path id="bottomSquare" d="M529.834667 832h576v192h-576z" fill="#7D92EE" p-id="806"></path>
+          <path id="rightCircle" d="M761.685333 671.104a353.408 352.896 0 1 0 706.816 0 353.408 352.896 0 1 0-706.816 0Z" fill="#97A8F1" p-id="807"></path>
+          <path d="M535.552 618.666667a226.112 225.770667 0 1 0 452.224 0 226.112 225.770667 0 1 0-452.224 0Z" fill="#FFFFFF" p-id="808"></path>
+          <path d="M544.938667 318.912a37.973333 37.973333 0 0 1-37.973334 37.973333h-148.885333v128.661334h142.293333a37.973333 37.973333 0 1 1 0 75.946666h-142.293333v214.442667a40.469333 40.469333 0 1 1-80.917333 0V332.8a51.84 51.84 0 0 1 51.84-51.84h177.962666c20.970667 0 37.973333 17.002667 37.973334 37.973333zM1004.8 517.866667a39.253333 39.253333 0 0 1 39.253333-39.253334h8.021334c17.237333 0 31.210667 13.973333 31.210666 31.210667 27.328-27.050667 58.133333-40.576 92.394667-40.576 39.36 0 70.037333 12.373333 92.032 37.12 18.986667 21.034667 28.48 55.36 28.48 102.997333v167.786667a39.253333 39.253333 0 1 1-78.485333 0v-149.418667c0-33.28-4.629333-56.277333-13.888-69.013333-9.045333-12.928-25.472-19.413333-49.322667-19.413333-25.941333 0-44.352 8.554667-55.232 25.664-10.645333 16.874667-15.978667 46.357333-15.978667 88.426666v123.754667a39.253333 39.253333 0 1 1-78.506666 0V517.866667z" fill="#FFFFFF" p-id="809"></path>
+          <path id="mouth" d="M762.346667 720.704c-24.490667 0-40.064-11.264-46.72-33.792-4.757333-16-17.493333-29.76-34.133334-29.397333-16.170667 0.362667-29.504 13.632-27.52 29.653333 1.237333 9.792 3.2 17.877333 5.824 24.298667 5.12 13.376 13.845333 25.408 26.176 36.138666 20.074667 17.429333 45.525333 26.133333 76.373334 26.133334 30.997333 0 56.533333-8.704 76.629333-26.112 12.16-10.752 20.693333-22.784 25.621333-36.16 2.56-7.424 4.437333-15.509333 5.717334-24.32 2.346667-16-10.965333-29.269333-27.114667-29.632-16.682667-0.362667-29.397333 13.418667-34.133333 29.397333-6.677333 22.528-22.250667 33.792-46.72 33.792z" fill="#7D92EE" p-id="810"></path>
+          <path id="leftEye" d="M650.88 502.293333m32.469333 0l-0.021333 0q32.469333 0 32.469333 32.469334l0 64.917333q0 32.469333-32.469333 32.469333l0.021333 0q-32.469333 0-32.469333-32.469333l0-64.917333q0-32.469333 32.469333-32.469334Z" fill="#7D92EE" p-id="811"></path>
+          <path id="rightEye" d="M813.205333 502.293333m32.469334 0l-0.021334 0q32.469333 0 32.469334 32.469334l0 64.917333q0 32.469333-32.469334 32.469333l0.021334 0q-32.469333 0-32.469334-32.469333l0-64.917333q0-32.469333 32.469334-32.469334Z" fill="#7D92EE" p-id="812"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="picker">
+      <div>
+        <div class="txt">请选择logo左侧颜色</div>
+        <div id="leftPicker"></div>
+      </div>
+      <div>
+        <div class="txt">请选择logo右侧颜色</div>
+        <div id="rightPicker"></div>
+      </div>
+    </div>
+    <div class="download">生成图片</div>
+  </div>
+</body>
+<script src="./jq.min.js"></script>
+<script src="./colpick.js"></script>
+<script src="./html2canvas.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#leftPicker').colpick({
+      flat:true,
+      layout:'hex',
+      submit:0,
+      onChange: function(hsb,hex,rgb,el,bySetColor) {
+        $('#leftCircle').attr('fill', `#${hex}`);
+        $('#bottomSquare').attr('fill', `#${hex}`);
+        $('#mouth').attr('fill', `#${hex}`);
+        $('#leftEye').attr('fill', `#${hex}`);
+        $('#rightEye').attr('fill', `#${hex}`);
+      }
+    });
+
+    $('#rightPicker').colpick({
+      flat:true,
+      layout:'hex',
+      submit:0,
+      onChange: function(hsb,hex,rgb,el,bySetColor) {
+        $('#rightCircle').attr('fill', `#${hex}`);
+      }
+    });
+
+    $('.download').on('click', function() {
+      html2canvas(document.querySelector("#logo"), {
+        width: 340,
+        height: 340,
+        backgroundColor: '#ffffff',
+        removeContainer: true,
+      }).then(canvas => {
+        var url = canvas.toDataURL('image/png');
+        const a = document.createElement('a')
+        a.href = url
+        a.setAttribute('download', 'cloudfun-logo')
+        a.click()
+      });
+    })
+  });
+</script>
+</html>
